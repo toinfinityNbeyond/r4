@@ -3,11 +3,13 @@ import {useSelector} from "react-redux";
 
 const CountDisplay = () => {
 
-    const {count} = useSelector(state => state)
+    const st = useSelector(state => state.countReducer)
+
+    console.log(st)
 
     return (
         <div>
-            <h1>Count : {count}</h1>
+            <h1>Count:{st.count}</h1>
         </div>
     );
 };

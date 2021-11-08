@@ -7,10 +7,11 @@ const CountButtons = () => {
 
     return (
         <div>
-            <button onClick={() => { dispatch({type:'INC'}) }} >INC</button>
-            <button onClick={() => { dispatch({type:'DEC'}) }} >DEC</button>
+            <button onClick={() => { dispatch(inc()) }} >INC</button>
+            <button onClick={() => { dispatch(dec()) }} >DEC</button>
         </div>
     );
 };
+
 
 export default CountButtons;
